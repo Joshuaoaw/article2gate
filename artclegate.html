@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTU Danao Campus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+        
+        <div id="login">
+            <form action="#" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <h1>Welcome to CTU Danao Campus</h1>
+    </header>
+
+    <main>
+      
+        <section id="home">
+            <h2>Explore CTU Danao Campus</h2>
+            <img src="29ec5276-7740-4447-b556-f71d0f3d0338.jpg" alt="CTU Danao Campus">
+            <p>The main entrance of CTU Danao Campus, a symbol of academic excellence and innovation.</p>
+        </section>
+
+       
+        <section id="gallery" style="display: none;">
+            <h2>Campus Gallery</h2>
+            <div class="gallery-item">
+                <img src="4b156052-60d9-4c48-a1a0-bd5fe55f50f9.jpg" alt="Picture 1">
+                <p>ANG MODEL SI CHIP COLLINS MAGLASANG PADUNG SIYA MO TIME OUT.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="948e37e6-c5da-4f78-9888-1219fccfdd11.jpg" alt="Picture 2">
+                <p>KANI SIYA MURAG RFID OR MAO JUD NA WAKO KIBAW</p>
+            </div>
+            <div class="gallery-item">
+                <img src="db7fcf98-613f-4c03-b254-2298d66e824a.jpg" alt="Picture 3">
+                <p>PICTURE SA GAWAS WITH THE STUDENTS NA MGA BRIGHT UG GWAPO GWAPA </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CTU Danao Campus. All rights reserved.</p>
+    </footer>
+
+    <script>
+        
+        document.querySelector('a[href="#gallery"]').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('#gallery').style.display = 'block';
+            document.querySelector('#home').style.display = 'none';
+        });
+
+        
+        document.querySelector('a[href="#home"]').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('#home').style.display = 'block';
+            document.querySelector('#gallery').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
